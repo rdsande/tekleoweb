@@ -1,20 +1,3 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 html {
@@ -24,17 +7,6 @@ html {
     font-family: 'Libre Baskerville', serif;
     scroll-behavior: smooth;
 }
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -46,11 +18,6 @@ html {
     text-shadow: none;
 }
 
-
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -59,13 +26,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -76,25 +36,39 @@ video {
     vertical-align: middle;
 }
 
-
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea {
     resize: vertical;
 }
+
+
+/* .tleo_container {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* .tleo_container:before {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: var(--y);
+    left: var(--x);
+    right: 0;
+    bottom: 0;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    mix-blend-mode: difference;
+} */
 
 
 /* ==========================================================================
@@ -116,6 +90,10 @@ textarea {
 body {
     font-family: 'Libre Baskerville', serif;
     color: #555;
+}
+
+.darkbg {
+    background: #050505;
 }
 
 .big-box {
@@ -198,7 +176,7 @@ body {
 .hero-wide {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -249,6 +227,11 @@ body {
     color: #fff;
 }
 
+.tleo_container {
+    height: 100vh;
+    padding-top: 5%;
+}
+
 
 /*SLIDER ALT*/
 
@@ -261,12 +244,10 @@ body {
 
 #sldSections {
     position: relative;
-    width: 320px;
-    height: 568px;
+    width: 100%;
+    height: 700px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 15px;
-    top: 50px;
     z-index: 1;
     background: url(loading.gif) no-repeat center center;
 }
@@ -277,12 +258,6 @@ body {
 
 #sldSections div {
     overflow: hidden;
-}
-
-#sldSections img {
-    width: 100%;
-    height: 100%;
-    display: block;
 }
 
 #tssel {
@@ -373,7 +348,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: 90%;
+    width: 100%;
     /* width: calc(100% - 115px); */
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), url(../img/tkleo1.jpg);
     background-attachment: fixed;
@@ -601,12 +576,31 @@ body {
     color: #fff;
 }
 
+
+/* .nav-row {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+    align-items: center;
+} */
+
 .nav-row {
     display: flex;
     width: 100%;
     color: #fff;
     padding: 1rem;
     align-items: center;
+    position: absolute;
+    min-height: 3rem;
+    height: 15%;
+    z-index: 9999;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slider__hero {
+    width: 90%;
+    position: relative;
 }
 
 .partner-img {
@@ -957,6 +951,9 @@ body {
     padding: 2rem;
     flex-flow: column;
     margin-bottom: 5rem;
+    padding-top: 10%;
+    height: 100%;
+    justify-content: flex-end;
 }
 
 .capt-title {
@@ -1051,9 +1048,14 @@ body {
     text-transform: lowercase;
 }
 
-.title-4,
 .title-type-2 {
     font-family: 'Libre Baskerville', serif;
+}
+
+.title-4,
+.title-type-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
 
 .title-type-3 {

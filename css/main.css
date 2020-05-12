@@ -346,6 +346,8 @@ body {
     justify-content: space-between;
 }
 
+
+
 .tek-header-1 {
     background-position: bottom left;
     background-size: cover;
@@ -353,7 +355,7 @@ body {
     height: 100%;
     width: 100%;
     /* width: calc(100% - 115px); */
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), url(../img/tkleo1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), url(../img/tekleo5.jpg);
     background-attachment: fixed;
 }
 
@@ -960,14 +962,32 @@ body {
     align-items: center;
 }
 
+.caption-col h3 {
+    text-shadow: 1px 1px 10px rgba(0,0,0,.8);
+}
+
 .capt-title-sub {
     font-family: 'poppins', sans-serif;
     color: #fff;
     text-transform: uppercase !important;
     letter-spacing: 2px;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.7);
     padding: 5px 20px;
 }
+
+.image__int_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image_svg_top {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    right: 70px;
+}
+
+
 
 .capt-title {
     color: #fff;
@@ -1119,6 +1139,29 @@ body {
     padding: 5rem;
     color: #f7f7f7;
 }
+
+.center-col {
+    display: flex;
+    align-items: center;
+}
+
+.col-inner-lg {
+    width: 100%;
+    padding: 5rem;
+    color: #f7f7f7;
+}
+
+.see__more {
+    /* text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; */
+    font-family: 'poppins',sans-serif;
+    font-size: 40px;
+    position: absolute;
+    right: 10rem;
+    bottom: 10.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
 
 .inner-row-1 {
     display: flex;
